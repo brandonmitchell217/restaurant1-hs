@@ -1,0 +1,9 @@
+{
+  "name": "restaurant1-hs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hubspot/cli": "^4.0.0"
+  }
+}
