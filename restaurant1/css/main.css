@@ -5,12 +5,14 @@
 }
 
 a {
+  color: yellow;
   text-decoration: none;
 }
 
 body {
   position: relative;
   color: red;
+  background: #000;
 }
 
 nav {

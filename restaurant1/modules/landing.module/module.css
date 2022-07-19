@@ -45,6 +45,14 @@ main .overlay {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+.landing-card_text p {
+  margin: 10px 0 16px;
+}
+.cta {
+  padding: 0.25rem 0.75rem;
+  background: #000;
+  border-radius: 8px;
+}
 .landing-card_image {
   max-width: 400px;
 }
