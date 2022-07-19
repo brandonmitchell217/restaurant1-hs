@@ -1,5 +1,17 @@
 <section>
-  <main>
-    {{module.title}}
+  <main
+    style="background-image: url('{{ module.landing_background.src }}');
+   background-position: {{module.landing_background.background_position}};
+   background-size: {{module.landing_background.background_size}};
+  "
+  >
+    {% if module.landing_background.src %}
+    <div
+      class="overlay"
+      style="background-image: url('{{ module.landing_overlay.src }}');
+      background-size: {{module.landing_overlay.background_size}};
+      "
+    ></div>
+    {% endif %} {{module.title}}
   </main>
 </section>

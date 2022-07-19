@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}
+
+main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: overlay;
+  background-position: 100% top;
+}

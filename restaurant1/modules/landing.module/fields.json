@@ -13,5 +13,37 @@
     "allow_new_line": false,
     "show_emoji_picker": false,
     "type": "text"
+  },
+  {
+    "id": "landing_background",
+    "name": "landing_background",
+    "display_width": null,
+    "label": "Background Image",
+    "help_text": "",
+    "inline_help_text": "",
+    "required": false,
+    "locked": false,
+    "type": "backgroundimage",
+    "default": {
+      "src": "",
+      "background_position": "MIDDLE_CENTER",
+      "background_size": "cover"
+    }
+  },
+  {
+    "id": "landing_overlay",
+    "name": "landing_overlay",
+    "display_width": null,
+    "label": "Background Overlay",
+    "help_text": "",
+    "inline_help_text": "",
+    "required": false,
+    "locked": false,
+    "type": "backgroundimage",
+    "default": {
+      "src": "",
+      "background_position": "MIDDLE_CENTER",
+      "background_size": "cover"
+    }
   }
 ]
