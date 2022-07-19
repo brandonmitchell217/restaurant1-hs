@@ -11,11 +11,13 @@ main {
   position: relative;
   z-index: -2;
   height: 100vh;
-  padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4.35%;
   background: rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -28,6 +30,17 @@ main .overlay {
   width: 100%;
   mix-blend-mode: overlay;
   background-position: 100% top;
+}
+
+.landing-title {
+  color: #fff;
+  text-shadow: 2px 4px 6px #000;
+}
+.landing-title h1 {
+  font-size: 3rem;
+}
+.landing-title h3 {
+  font-size: 2.5rem;
 }
 
 .landing-card {
