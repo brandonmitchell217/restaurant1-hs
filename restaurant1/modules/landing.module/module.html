@@ -12,6 +12,25 @@
       background-size: {{module.landing_overlay.background_size}};
       "
     ></div>
-    {% endif %} {{module.title}}
+    {% endif %}
+    <div class="landing-card">
+      <div class="landing-card_text">
+        <div class="landing-card_text_title">
+          <h1>{{module.title}}</h1>
+        </div>
+        <div class="landing-card_text_desc">
+          <p>{{module.desc}}</p>
+        </div>
+        {% if module.cta_link.url %}
+        <a href="{{module.cta_link.url}}" class="cta">The Link</a>
+        {% endif %}
+      </div>
+      <div class="landing-card_image">
+        <img
+          src="{{module.landing_card_image.src}}"
+          alt="{{module.landing_card_image.alt}}"
+        />
+      </div>
+    </div>
   </main>
 </section>
