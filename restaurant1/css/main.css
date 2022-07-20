@@ -16,7 +16,8 @@ body {
   background: #000;
 }
 
-nav {
+nav,
+footer {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,13 +29,24 @@ nav {
   align-items: center;
 }
 
-nav ul {
+nav ul,
+footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav ul li {
+nav ul li,
+footer ul li {
   margin: 0 10px;
+}
+
+footer {
+  flex-direction: row-reverse;
+  border-top: 1px solid #fff;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

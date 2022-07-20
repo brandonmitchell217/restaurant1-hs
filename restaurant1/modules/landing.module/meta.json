@@ -1,7 +1,7 @@
 {
-  "global": false,
-  "host_template_types": ["PAGE", "BLOG_LISTING", "BLOG_POST"],
-  "module_id": 77837959080,
-  "label": "Landing Group",
-  "is_available_for_new_content": true
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 79613585451,
+  "label" : "Landing Group",
+  "is_available_for_new_content" : true
 }

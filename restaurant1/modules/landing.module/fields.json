@@ -1,98 +1,156 @@
 [
   {
-    "id": "landing_title",
-    "name": "landing_title",
+    "id": "27daa94f-477d-a11a-21d4-e01997f9c7c5",
+    "name": "landing_layout",
     "display_width": null,
-    "label": "Landing Title",
-    "help_text": "",
-    "inline_help_text": "",
+    "label": "Landing Layout",
     "required": false,
     "locked": false,
-    "validation_regex": "",
-    "placeholder": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text"
-  },
-  {
-    "id": "landing_subtitle",
-    "name": "landing_subtitle",
-    "display_width": null,
-    "label": "Landing Subtitle",
-    "help_text": "",
-    "inline_help_text": "",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text"
-  },
-  {
-    "id": "card_title",
-    "name": "card_title",
-    "display_width": null,
-    "label": "Card Title",
-    "help_text": "",
-    "inline_help_text": "",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text"
-  },
-  {
-    "id": "desc",
-    "name": "desc",
-    "display_width": null,
-    "label": "Desc",
-    "help_text": "",
-    "inline_help_text": "",
-    "required": false,
-    "locked": false,
-    "validation_regex": "",
-    "placeholder": "",
-    "allow_new_line": false,
-    "show_emoji_picker": false,
-    "type": "text"
-  },
-  {
-    "name": "cta_link",
-    "label": "CTA Link",
-    "required": false,
-    "locked": false,
-    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
-    "type": "link",
-    "show_advanced_rel_options": false,
-    "default": {
-      "url": {
-        "content_id": null,
-        "type": "EXTERNAL",
-        "href": ""
+    "children": [
+      {
+        "id": "landing_card_image",
+        "name": "landing_card_image",
+        "display_width": null,
+        "label": "Landing Card Image",
+        "required": false,
+        "locked": false,
+        "responsive": true,
+        "resizable": true,
+        "show_loading": false,
+        "type": "image",
+        "default": {
+          "size_type": "exact",
+          "src": "",
+          "alt": "image-alt-text",
+          "loading": "lazy"
+        }
       },
-      "open_in_new_tab": false,
-      "no_follow": false,
-      "sponsored": false,
-      "user_generated_content": false
-    }
-  },
-  {
-    "name": "landing_card_image",
-    "label": "Landing Card Image",
-    "required": false,
-    "locked": false,
-    "responsive": true,
-    "resizable": true,
-    "show_loading": false,
-    "type": "image",
+      {
+        "id": "cta_link",
+        "name": "cta_link",
+        "display_width": null,
+        "label": "CTA Link",
+        "required": false,
+        "locked": false,
+        "supported_types": [
+          "EXTERNAL",
+          "CONTENT",
+          "FILE",
+          "EMAIL_ADDRESS",
+          "BLOG"
+        ],
+        "show_advanced_rel_options": false,
+        "type": "link",
+        "default": {
+          "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false,
+          "sponsored": false,
+          "user_generated_content": false
+        }
+      },
+      {
+        "id": "desc",
+        "name": "desc",
+        "display_width": null,
+        "label": "Desc",
+        "help_text": "",
+        "inline_help_text": "",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text"
+      },
+      {
+        "id": "card_title",
+        "name": "card_title",
+        "display_width": null,
+        "label": "Card Title",
+        "help_text": "",
+        "inline_help_text": "",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text"
+      },
+      {
+        "id": "landing_subtitle",
+        "name": "landing_subtitle",
+        "display_width": null,
+        "label": "Landing Subtitle",
+        "help_text": "",
+        "inline_help_text": "",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text"
+      },
+      {
+        "id": "landing_title",
+        "name": "landing_title",
+        "display_width": null,
+        "label": "Landing Title",
+        "help_text": "",
+        "inline_help_text": "",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "placeholder": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text"
+      },
+      {
+        "id": "f5fd8b21-fa9e-fe65-d063-e8cc575263a0",
+        "name": "layout_choice",
+        "display_width": null,
+        "label": "Layout Choice",
+        "required": false,
+        "locked": false,
+        "display": "select",
+        "choices": [
+          ["image right", "Image-Right"],
+          ["image left", "Image-Left"]
+        ],
+        "type": "choice",
+        "default": "image right"
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "type": "group",
     "default": {
-      "size_type": "exact",
-      "src": "",
-      "alt": "image-alt-text",
-      "loading": "lazy"
+      "landing_card_image": {
+        "size_type": "exact",
+        "src": "",
+        "alt": "image-alt-text",
+        "loading": "lazy"
+      },
+      "cta_link": {
+        "url": {
+          "content_id": null,
+          "type": "EXTERNAL",
+          "href": ""
+        },
+        "open_in_new_tab": false,
+        "no_follow": false,
+        "sponsored": false,
+        "user_generated_content": false
+      },
+      "layout_choice": "image right"
     }
   },
   {

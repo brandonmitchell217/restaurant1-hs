@@ -14,25 +14,27 @@
     ></div>
     {% endif %}
     <div class="landing-title">
-      <h1>{{module.landing_title}}</h1>
-      <h3>{{module.landing_subtitle}}</h3>
+      <h1>{{module.landing_layout.landing_title}}</h1>
+      <h3>{{module.landing_layout.landing_subtitle}}</h3>
     </div>
     <div class="landing-card">
       <div class="landing-card_text">
         <div class="landing-card_text_title">
-          <h1>{{module.card_title}}</h1>
+          <h1>{{module.landing_layout.card_title}}</h1>
         </div>
         <div class="landing-card_text_desc">
-          <p>{{module.desc}}</p>
+          <p>{{module.landing_layout.desc}}</p>
         </div>
         {% if module.cta_link.url %}
-        <a href="{{module.cta_link.url}}" class="cta">The Link</a>
+        <a href="{{module.landing_layout.cta_link.url}}" class="cta"
+          >The Link</a
+        >
         {% endif %}
       </div>
       <div class="landing-card_image">
         <img
-          src="{{module.landing_card_image.src}}"
-          alt="{{module.landing_card_image.alt}}"
+          src="{{module.landing_layout.landing_card_image.src}}"
+          alt="{{module.landing_layout.landing_card_image.alt}}"
         />
       </div>
     </div>
