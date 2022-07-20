@@ -21,6 +21,13 @@ main {
   align-items: center;
 }
 
+.right {
+  flex-direction: row;
+}
+.left {
+  flex-direction: row-reverse;
+}
+
 main .overlay {
   position: absolute;
   top: 0;
