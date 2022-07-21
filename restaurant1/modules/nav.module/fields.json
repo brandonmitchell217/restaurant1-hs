@@ -1,0 +1,10 @@
+[
+  {
+    "name": "menu",
+    "label": "Menu",
+    "required": false,
+    "locked": false,
+    "type": "menu",
+    "default": 12345678911
+  }
+]
